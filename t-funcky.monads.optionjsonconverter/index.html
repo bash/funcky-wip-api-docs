@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><title>OptionJsonConverter Class</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="light dark" name="color-scheme">
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/style.css" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-dark.min.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-light.min.css" media="(prefers-color-scheme: light)" /></head>
+<body><main class="documentation-page"><header class="page-header"><h1>OptionJsonConverter Class</h1>
+                        <div class="description"><pre class="code-block"><span class="token-stream -colors"><span class="tt -ident -identKeyword">sealed</span> <span class="tt -ident -identKeyword">class</span> <a href="https://tau.garden/funcky-wip-api-docs/t-funcky.monads.optionjsonconverter/" class="tt -ident -identClass"><span class="tt -first-letter">O</span>ptionJsonConverter</a> <span class="tt -punct">:</span> <a href="https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverterfactory" class="tt -ident -identClass"><span class="tt -first-letter">J</span>sonConverterFactory</a></span></pre><div class="documentation-text"><p>A JSON converter for <code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.monads.option-1/" class="tt -ident -identStruct"><span class="tt -first-letter">O</span>ption</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TItem</span><span class="tt -delimiter">&gt;</span></span></span></code> that serializes <code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.monads.option-1/#Option.Some&#x2B;000AiR" class="tt -ident -identMember"><span class="tt -first-letter">S</span>ome</a></span></code> transparently and <code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.monads.option-1/#None" class="tt -ident -identMember"><span class="tt -first-letter">N</span>one</a></span></code> as <code><span class="token-stream -colors"><span class="tt -ident -identKeyword">null</span></span></code>.</p></div></div>
+                        <div class="documentation-info-box"><dl><dt>Assembly</dt>
+            <dd>Funcky</dd>
+            <dt>Namespace</dt>
+            <dd><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/n-funcky.monads/" class="tt -ident -identOther"><span class="tt -first-letter">F</span>uncky.Monads</a></span></dd>
+            <dt>Inheritance</dt><dd><span class="token-stream -colors-on-hover"><a href="https://learn.microsoft.com/en-us/dotnet/api/system.object" class="tt -ident -identPrimitive"><span class="tt -first-letter">o</span>bject</a></span> → <span class="token-stream -colors-on-hover"><a href="https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter" class="tt -ident -identClass"><span class="tt -first-letter">J</span>sonConverter</a></span> → <span class="token-stream -colors-on-hover"><a href="https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverterfactory" class="tt -ident -identClass"><span class="tt -first-letter">J</span>sonConverterFactory</a></span> → <span class="token-stream -colors-on-hover"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.monads.optionjsonconverter/" class="tt -ident -identClass"><span class="tt -first-letter">O</span>ptionJsonConverter</a></span></dd></dl></div></header>
+
+                    <section class="documentation-section"><details open><summary><h2>Constructors</h2></summary><ul class="member-list"><li class="documentation-member" id=".ctor&#x2B;0KZzuo"><pre class="attributes"></pre>
+                <details open class="details"><summary class="signature"><h4 class="-plain"><pre><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.monads.optionjsonconverter/" class="tt -ident -identClass"><span class="tt -first-letter">O</span>ptionJsonConverter</a><span class="tt -group"><span class="tt -delimiter">(</span><span class="tt -delimiter">)</span></span></span></pre></h4></summary></details></li></ul></details></section></main>
+
+    <script type="importmap">{"imports":{"/highlight/":"https://tau.garden/funcky-wip-api-docs/highlight/"}}</script>
+    <script type="module">
+        for (const details of document.querySelectorAll('.tt.-details')) {
+            const expansion = details.querySelector('.tt.-expansion')
+            const summary = details.querySelector('.tt.-summary')
+            details.addEventListener('click', show, { once: true })
+            function show(event) {
+                event.preventDefault()
+                expansion.removeAttribute('hidden')
+                summary.setAttribute('hidden', '')
+            }
+        }
+    </script>
+    <script type="module">
+        import hljs from '/highlight/core.min.js'
+        import csharp from '/highlight/csharp.min.js'
+        hljs.registerLanguage('csharp', csharp)
+        hljs.configure({ cssSelector: 'pre code.language-csharp' })
+        hljs.highlightAll()
+    </script>
+    <script type="module">
+        openDetailsAncestorsOfTargetedElement()
+        window.addEventListener('hashchange', _ => openDetailsAncestorsOfTargetedElement())
+
+        function openDetailsAncestorsOfTargetedElement() {
+            for (const details of document.querySelectorAll('details:has(:target)')) {
+                details.open = true
+            }
+        }
+    </script></body></html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><title>Funcky.Extensions Namespace</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="light dark" name="color-scheme">
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/style.css" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-dark.min.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-light.min.css" media="(prefers-color-scheme: light)" /></head>
+<body><main class="documentation-page"><header class="page-header"><h1>Funcky.Extensions Namespace</h1>
+                        <div class="description"><pre class="code-block"><span class="token-stream -colors"><span class="tt -ident -identKeyword">namespace</span> <a href="https://tau.garden/funcky-wip-api-docs/n-funcky.extensions/" class="tt -ident -identOther"><span class="tt -first-letter">F</span>uncky.Extensions</a></span></pre></div>
+                        </header>
+
+                    <section class="documentation-section"><h2>Types</h2>
+<ul><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.extensions.eitherpartitions-2/" class="tt -ident -identStruct"><span class="tt -first-letter">E</span>itherPartitions</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TLeft</span><span class="tt -punct">,</span> <span class="tt -ident -identGenericParameter">TRight</span><span class="tt -delimiter">&gt;</span></span></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.extensions.partitions-1/" class="tt -ident -identStruct"><span class="tt -first-letter">P</span>artitions</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TSource</span><span class="tt -delimiter">&gt;</span></span></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.extensions.resultpartitions-1/" class="tt -ident -identStruct"><span class="tt -first-letter">R</span>esultPartitions</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TValidResult</span><span class="tt -delimiter">&gt;</span></span></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.extensions.valuewithfirst-1/" class="tt -ident -identStruct"><span class="tt -first-letter">V</span>alueWithFirst</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TValue</span><span class="tt -delimiter">&gt;</span></span></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.extensions.valuewithindex-1/" class="tt -ident -identStruct"><span class="tt -first-letter">V</span>alueWithIndex</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TValue</span><span class="tt -delimiter">&gt;</span></span></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.extensions.valuewithlast-1/" class="tt -ident -identStruct"><span class="tt -first-letter">V</span>alueWithLast</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TValue</span><span class="tt -delimiter">&gt;</span></span></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.extensions.valuewithprevious-1/" class="tt -ident -identStruct"><span class="tt -first-letter">V</span>alueWithPrevious</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TValue</span><span class="tt -delimiter">&gt;</span></span></span></code></li></ul></section></main>
+
+    <script type="importmap">{"imports":{"/highlight/":"https://tau.garden/funcky-wip-api-docs/highlight/"}}</script>
+    <script type="module">
+        for (const details of document.querySelectorAll('.tt.-details')) {
+            const expansion = details.querySelector('.tt.-expansion')
+            const summary = details.querySelector('.tt.-summary')
+            details.addEventListener('click', show, { once: true })
+            function show(event) {
+                event.preventDefault()
+                expansion.removeAttribute('hidden')
+                summary.setAttribute('hidden', '')
+            }
+        }
+    </script>
+    <script type="module">
+        import hljs from '/highlight/core.min.js'
+        import csharp from '/highlight/csharp.min.js'
+        hljs.registerLanguage('csharp', csharp)
+        hljs.configure({ cssSelector: 'pre code.language-csharp' })
+        hljs.highlightAll()
+    </script>
+    <script type="module">
+        openDetailsAncestorsOfTargetedElement()
+        window.addEventListener('hashchange', _ => openDetailsAncestorsOfTargetedElement())
+
+        function openDetailsAncestorsOfTargetedElement() {
+            for (const details of document.querySelectorAll('details:has(:target)')) {
+                details.open = true
+            }
+        }
+    </script></body></html>

@@ -1,0 +1,443 @@
+/* Open Sans is licensed under the Apache License, Version 2.0. See http://www.apache.org/licenses/LICENSE-2.0 */
+/* Source Code Pro is under the Open Font License. See https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL */
+/* open-sans-300 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("fonts/open-sans-v17-all-charsets-300.woff2") format("woff2");
+}
+/* open-sans-300italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"), local("OpenSans-LightItalic"), url("fonts/open-sans-v17-all-charsets-300italic.woff2") format("woff2");
+}
+/* open-sans-regular - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("fonts/open-sans-v17-all-charsets-regular.woff2") format("woff2");
+}
+/* open-sans-italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("fonts/open-sans-v17-all-charsets-italic.woff2") format("woff2");
+}
+/* open-sans-600 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("fonts/open-sans-v17-all-charsets-600.woff2") format("woff2");
+}
+/* open-sans-600italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans SemiBold Italic"), local("OpenSans-SemiBoldItalic"), url("fonts/open-sans-v17-all-charsets-600italic.woff2") format("woff2");
+}
+/* open-sans-700 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("fonts/open-sans-v17-all-charsets-700.woff2") format("woff2");
+}
+/* open-sans-700italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("fonts/open-sans-v17-all-charsets-700italic.woff2") format("woff2");
+}
+/* open-sans-800 - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"), url("fonts/open-sans-v17-all-charsets-800.woff2") format("woff2");
+}
+/* open-sans-800italic - latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold Italic"), local("OpenSans-ExtraBoldItalic"), url("fonts/open-sans-v17-all-charsets-800italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/FiraCode-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/FiraCode-Bold.woff2") format("woff2");
+}
+*, *::before, *::after {
+  font: inherit;
+  color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+}
+
+pre, code {
+  font-family: "Fira Code", monospace;
+  font-size: 0.98em;
+  font-variant-ligatures: none;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.3;
+}
+
+:is(h1, h2, h3, h4, h5):not(.-plain) {
+  font-weight: bold;
+}
+
+h1, h2 {
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid light-dark(#d7d7d7, #bdbdbd);
+}
+
+summary h1, h2 {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+summary:has(:is(h1, h2)) {
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid light-dark(#d7d7d7, #bdbdbd);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.05em;
+}
+
+ul, ol {
+  padding-inline-start: 2ch;
+}
+
+summary :is(h3, h3, h4) {
+  display: inline-block;
+}
+
+p {
+  max-width: 40rem;
+}
+
+details > summary {
+  list-style: none;
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details > summary::before {
+  content: "";
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  margin-right: 0.5em;
+  background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 12 12" 	enable-background="new 0 0 12 12" xmlns="http://www.w3.org/2000/svg">	<path d="M4,2l4,4l-4,4" stroke="black" fill="none" stroke-width="1px"/></svg>');
+  transition: opacity 125ms;
+  opacity: 0.6;
+}
+@media (prefers-color-scheme: dark) {
+  details > summary::before {
+    filter: invert(1);
+  }
+}
+details > summary:has(h2)::before {
+  margin-top: 0.6em;
+}
+details > summary:has(h3)::before {
+  margin-top: 0.4em;
+}
+details > summary:has(h4)::before {
+  margin-top: 0.1em;
+}
+details > summary:has(h5)::before {
+  margin-top: 0.1em;
+}
+details > summary:hover::before {
+  opacity: 1;
+}
+details[open] > summary::before {
+  background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 12 12" 	enable-background="new 0 0 12 12" xmlns="http://www.w3.org/2000/svg">	<path d="M2,4l4,4l4,-4" stroke="black" fill="none" stroke-width="1px"/></svg>');
+}
+
+.documentation-text ul {
+  list-style-type: disc;
+}
+.documentation-text ul ul {
+  list-style-type: circle;
+}
+
+:root {
+  --block-spacing: .5em;
+  --block-start-spacing: .75em;
+  --section-spacing: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, p, details, pre, ul, ol, dl {
+  margin-bottom: var(--block-spacing);
+}
+
+details :is(h1, h2, h3, h4, h5, p, details):last-child {
+  margin-bottom: 0;
+}
+
+:is(h1, h2, h3, h4, h5) pre {
+  margin-bottom: 0;
+  white-space: pre-wrap;
+}
+
+:is(h1, h2, h3, h4, h5) {
+  margin-top: var(--section-spacing);
+}
+
+summary :is(h1, h2, h3, h4, h5) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+summary:has(h1, h2, h3, h4, h5) {
+  margin-top: var(--section-spacing);
+  margin-bottom: var(--block-start-spacing);
+}
+
+details details:last-child > summary:has(h1, h2, h3, h4, h5):last-child {
+  margin-bottom: 0;
+}
+
+details:has(> summary h4) details > summary:has(h5):first-child {
+  margin-top: var(--block-start-spacing);
+}
+
+.documentation-section,
+.page-header {
+  margin-bottom: var(--section-spacing);
+}
+
+:root {
+  --content-padding-x: 1rem;
+  --content-padding-y: 1.4rem;
+}
+
+:root {
+  color-scheme: light dark;
+  background-color: light-dark(#fff, #1B1B1B);
+  color: light-dark(#000, #fff);
+  scroll-behavior: smooth;
+}
+
+.documentation-page {
+  padding: var(--content-padding-y) var(--content-padding-x);
+  max-width: 70rem;
+  margin: auto;
+}
+
+.token-stream.-colors-on-hover .tt {
+  transition: color 125ms ease-in-out;
+}
+
+a.tt,
+a.tt:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.tt .tt.-first-letter {
+  text-decoration: currentColor underline 1px;
+  text-underline-position: under;
+  text-underline-offset: -2px;
+}
+
+a.tt:is(:hover, :focus-visible) {
+  text-decoration: currentColor underline 1px;
+  text-underline-position: under;
+  text-underline-offset: -2px;
+}
+
+.token-stream.-colors .tt.-identMember,
+.token-stream.-colors-on-hover:hover .tt.-identMember {
+  color: light-dark(#000, #fff);
+}
+.token-stream.-colors .tt.-identSelf,
+.token-stream.-colors-on-hover:hover .tt.-identSelf {
+  color: light-dark(#29599f, #6c9fec);
+}
+.token-stream.-colors .tt.-identClass, .token-stream.-colors .tt.-identStruct, .token-stream.-colors .tt.-identDelegate,
+.token-stream.-colors-on-hover:hover .tt.-identClass,
+.token-stream.-colors-on-hover:hover .tt.-identStruct,
+.token-stream.-colors-on-hover:hover .tt.-identDelegate {
+  color: light-dark(#007c6c, #51b2a0);
+}
+.token-stream.-colors .tt.-identGenericParameter,
+.token-stream.-colors .tt.-identShape,
+.token-stream.-colors .tt.-identInterface,
+.token-stream.-colors .tt.-identPrimitive,
+.token-stream.-colors-on-hover:hover .tt.-identGenericParameter,
+.token-stream.-colors-on-hover:hover .tt.-identShape,
+.token-stream.-colors-on-hover:hover .tt.-identInterface,
+.token-stream.-colors-on-hover:hover .tt.-identPrimitive {
+  color: light-dark(#006d5e, #63c3b0);
+}
+.token-stream.-colors .tt.-identEnum,
+.token-stream.-colors-on-hover:hover .tt.-identEnum {
+  color: light-dark(#037c47, #53b57c);
+}
+.token-stream.-colors .tt.-literal.-number,
+.token-stream.-colors .tt.-literal.-bool,
+.token-stream.-colors-on-hover:hover .tt.-literal.-number,
+.token-stream.-colors-on-hover:hover .tt.-literal.-bool {
+  color: light-dark(#AB2F6B, #B5CEA8);
+}
+.token-stream.-colors .tt.-literal.-string,
+.token-stream.-colors .tt.-literal.-char,
+.token-stream.-colors-on-hover:hover .tt.-literal.-string,
+.token-stream.-colors-on-hover:hover .tt.-literal.-char {
+  color: light-dark(#A31515, #D69D85);
+}
+
+.tt.-identMember {
+  font-weight: bold;
+}
+
+.tt.-punct {
+  font-variant-ligatures: contextual;
+}
+
+.tt.-attribute {
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+.tt.-attribute:hover {
+  opacity: 1;
+}
+
+.tt.-summary {
+  cursor: pointer;
+  background-color: light-dark(#eaeaea, #2b2b2b);
+  border-radius: 0.3em;
+  line-height: 1;
+  border: 1px solid light-dark(#d0d0d0, #626262);
+  font-size: 0.8em;
+}
+
+.documentation-member {
+  margin-top: var(--section-spacing);
+}
+.documentation-member:target > .details > .signature {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.documentation-member > .attributes {
+  margin-left: 1.5rem;
+  margin-bottom: 0;
+}
+.documentation-member > .details > .signature {
+  margin-top: 0;
+}
+.documentation-member > .details > .documentation-text {
+  padding-left: 3em;
+}
+
+.documentation-info-box {
+  font-size: 0.85em;
+  border: 1px solid light-dark(#d7d7d7, #535353);
+  padding: 1em;
+  width: 20rem;
+  border-radius: 0.25em;
+}
+.documentation-info-box dl {
+  display: grid;
+  grid-template-columns: min-content auto;
+  margin: 0;
+  grid-gap: 0.2em 1em;
+}
+.documentation-info-box dt {
+  text-align: right;
+  font-weight: bold;
+}
+.documentation-info-box dd {
+  margin: 0;
+}
+
+.member-list {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.code-block {
+  background-color: light-dark(#f2f2f2, #343434);
+  padding: 0.7em 1em;
+  white-space: pre-wrap;
+  border-radius: 0.25em;
+}
+
+.hljs {
+  border-radius: 0.25em;
+}
+
+.hljs {
+  background-color: light-dark(#f2f2f2, #343434) !important;
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: max-content 1fr;
+  grid-template-areas: "title box" "desc box";
+  align-items: start;
+  align-content: start;
+  row-gap: 1em;
+}
+.page-header h1 {
+  grid-area: title;
+  margin: 0;
+}
+.page-header > .documentation-info-box {
+  grid-area: box;
+}
+.page-header > .description {
+  margin-right: 1em;
+  grid-area: desc;
+}
+.page-header > .description > .code-block {
+  font-size: 1.1em;
+}
+.page-header > .description > .code-block:not(:last-child) {
+  margin-bottom: var(--block-spacing);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../../../Descriptive/Resources/style/_fonts.scss%22,%22../../../../Descriptive/Resources/style/_reset.scss%22,%22../../../../Descriptive/Resources/style/typography/_visuals.scss%22,%22../../../../Descriptive/Resources/style/typography/_block.scss%22,%22../../../../Descriptive/Resources/style/_page.scss%22,%22../../../../Descriptive/Resources/style/_token-tree.scss%22,%22../../../../Descriptive/Resources/style/_member.scss%22,%22../../../../Descriptive/Resources/style/components/_info-box.scss%22,%22../../../../Descriptive/Resources/style/components/_member-list.scss%22,%22../../../../Descriptive/Resources/style/components/_code-block.scss%22,%22../../../../Descriptive/Resources/style/components/_page-header.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;AACA;AAEA;AACA;EACI;EACA;EACA;EACA;;AAIJ;AACA;EACI;EACA;EACA;EACA;;AAIJ;AACA;EACI;EACA;EACA;EACA;;AAIJ;AACA;EACI;EACA;EACA;EACA;;AAIJ;AACA;EACI;EACA;EACA;EACA;;AAIJ;AACA;EACI;EACA;EACA;EACA;;AAIJ;AACA;EACI;EACA;EACA;EACA;;AAIJ;AACA;EACI;EACA;EACA;EACA;;AAIJ;AACA;EACI;EACA;EACA;EACA;;AAIJ;AACA;EACI;EACA;EACA;EACA;;AAIJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;ACxGJ;EACI;EACA;EACA;EACA;EACA;EACA;;;ACNJ;EACI;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;;;AAKA;EACI;EACA;EACA;;AAGJ;EACI;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;EACA;;AAEA;EAbJ;IAa0C;;;AAI1C;EAA4B;;AAC5B;EAA4B;;AAC5B;EAA4B;;AAC5B;EAA4B;;AAGxB;EAAY;;AAGhB;EACI;;;AAOJ;EAAK;;AACL;EAAQ;;;AC7GZ;EACI;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;;;AAGJ;EACI;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;AAAA;EAEI;;;AC3CJ;EACI;EACA;;;AAGJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;;ACdA;EACI;;;AAIR;AAAA;EAEI;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;;AAKA;AAAA;EACI;;AAGJ;AAAA;EACI;;AAGJ;AAAA;AAAA;AAAA;EACI;;AAGJ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAII;;AAGJ;AAAA;EACI;;AAGJ;AAAA;AAAA;AAAA;EAEI;;AAGJ;AAAA;AAAA;AAAA;EAEI;;;AAIR;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;;AAEA;EACI;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;;ACnFJ;EAmBI;;AAlBA;EACI;;AAGJ;EAEI;EACA;;AAGJ;EACI;;AAGJ;EACI;;;AChBR;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;;;ACpBR;EACI;EACA;;;ACFJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EAEI;;;ACbJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EAAK;EAAkB;;AAEvB;EACI;;AAGJ;EACI;EACA;;AAGJ;EACI;;AAEA;EACI%22,%22file%22:%22style.css%22,%22sourcesContent%22:%5B%22/*%20Open%20Sans%20is%20licensed%20under%20the%20Apache%20License,%20Version%202.0.%20See%20http://www.apache.org/licenses/LICENSE-2.0%20%2A/%5Cn/*%20Source%20Code%20Pro%20is%20under%20the%20Open%20Font%20License.%20See%20https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL%20%2A/%5Cn%5Cn/*%20open-sans-300%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20normal;%5Cn%20%20%20%20font-weight:%20300;%5Cn%20%20%20%20src:%20local('Open%20Sans%20Light'),%20local('OpenSans-Light'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-300.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn/*%20open-sans-300italic%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20italic;%5Cn%20%20%20%20font-weight:%20300;%5Cn%20%20%20%20src:%20local('Open%20Sans%20Light%20Italic'),%20local('OpenSans-LightItalic'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-300italic.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn/*%20open-sans-regular%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20normal;%5Cn%20%20%20%20font-weight:%20400;%5Cn%20%20%20%20src:%20local('Open%20Sans%20Regular'),%20local('OpenSans-Regular'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-regular.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn/*%20open-sans-italic%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20italic;%5Cn%20%20%20%20font-weight:%20400;%5Cn%20%20%20%20src:%20local('Open%20Sans%20Italic'),%20local('OpenSans-Italic'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-italic.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn/*%20open-sans-600%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20normal;%5Cn%20%20%20%20font-weight:%20600;%5Cn%20%20%20%20src:%20local('Open%20Sans%20SemiBold'),%20local('OpenSans-SemiBold'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-600.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn/*%20open-sans-600italic%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20italic;%5Cn%20%20%20%20font-weight:%20600;%5Cn%20%20%20%20src:%20local('Open%20Sans%20SemiBold%20Italic'),%20local('OpenSans-SemiBoldItalic'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-600italic.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn/*%20open-sans-700%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20normal;%5Cn%20%20%20%20font-weight:%20700;%5Cn%20%20%20%20src:%20local('Open%20Sans%20Bold'),%20local('OpenSans-Bold'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-700.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn/*%20open-sans-700italic%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20italic;%5Cn%20%20%20%20font-weight:%20700;%5Cn%20%20%20%20src:%20local('Open%20Sans%20Bold%20Italic'),%20local('OpenSans-BoldItalic'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-700italic.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn/*%20open-sans-800%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20normal;%5Cn%20%20%20%20font-weight:%20800;%5Cn%20%20%20%20src:%20local('Open%20Sans%20ExtraBold'),%20local('OpenSans-ExtraBold'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-800.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn/*%20open-sans-800italic%20-%20latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic%20%2A/%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Open%20Sans';%5Cn%20%20%20%20font-style:%20italic;%5Cn%20%20%20%20font-weight:%20800;%5Cn%20%20%20%20src:%20local('Open%20Sans%20ExtraBold%20Italic'),%20local('OpenSans-ExtraBoldItalic'),%5Cn%20%20%20%20url('fonts/open-sans-v17-all-charsets-800italic.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Fira%20Code';%5Cn%20%20%20%20font-style:%20normal;%5Cn%20%20%20%20font-weight:%20400;%5Cn%20%20%20%20src:%20url('fonts/FiraCode-Regular.woff2')%20format('woff2');%5Cn%7D%5Cn%5Cn@font-face%20%7B%5Cn%20%20%20%20font-family:%20'Fira%20Code';%5Cn%20%20%20%20font-style:%20normal;%5Cn%20%20%20%20font-weight:%20700;%5Cn%20%20%20%20src:%20url('fonts/FiraCode-Bold.woff2')%20format('woff2');%5Cn%7D%5Cn%22,%22*,%20*::before,%20*::after%20%7B%5Cn%20%20%20%20font:%20inherit;%5Cn%20%20%20%20color:%20inherit;%5Cn%20%20%20%20border:%20none;%5Cn%20%20%20%20margin:%200;%5Cn%20%20%20%20padding:%200;%5Cn%20%20%20%20box-sizing:%20border-box;%5Cn%7D%5Cn%22,%22:root%20%7B%5Cn%20%20%20%20line-height:%201.5;%5Cn%20%20%20%20font-family:%20'Open%20Sans',%20sans-serif;%5Cn%7D%5Cn%5Cnpre,%20code%20%7B%5Cn%20%20%20%20font-family:%20'Fira%20Code',%20monospace;%5Cn%20%20%20%20font-size:%200.98em;%5Cn%20%20%20%20font-variant-ligatures:%20none;%5Cn%7D%5Cn%5Cnh1,%20h2,%20h3,%20h4,%20h5%20%7B%5Cn%20%20%20%20line-height:%201.3;%5Cn%7D%5Cn%5Cn:is(h1,%20h2,%20h3,%20h4,%20h5):not(.-plain)%20%7B%5Cn%20%20%20%20font-weight:%20bold;%5Cn%7D%5Cn%5Cnh1,%20h2%20%7B%5Cn%20%20%20%20padding-bottom:%20.2em;%5Cn%20%20%20%20border-bottom:%201px%20solid%20light-dark(%23d7d7d7,%20%23bdbdbd);%5Cn%7D%5Cn%5Cnsummary%20h1,%20h2%20%7B%5Cn%20%20%20%20padding-bottom:%200;%5Cn%20%20%20%20border-bottom:%20none;%5Cn%7D%5Cn%5Cnsummary:has(:is(h1,%20h2))%20%7B%5Cn%20%20%20%20padding-bottom:%20.2em;%5Cn%20%20%20%20border-bottom:%201px%20solid%20light-dark(%23d7d7d7,%20%23bdbdbd);%5Cn%7D%5Cn%5Cnh1%20%7B%5Cn%20%20%20%20font-size:%202em;%5Cn%7D%5Cn%5Cnh2%20%7B%5Cn%20%20%20%20font-size:%201.6em;%5Cn%7D%5Cn%5Cnh3%20%7B%5Cn%20%20%20%20font-size:%201.4em;%5Cn%7D%5Cn%5Cnh4%20%7B%5Cn%20%20%20%20font-size:%201.05em;%5Cn%7D%5Cn%5Cnul,%20ol%20%7B%5Cn%20%20%20%20padding-inline-start:%202ch;%5Cn%7D%5Cn%5Cnsummary%20:is(h3,%20h3,%20h4)%20%7B%5Cn%20%20%20%20display:%20inline-block;%5Cn%7D%5Cn%5Cnp%20%7B%5Cn%20%20%20%20max-width:%2040rem;%5Cn%7D%5Cn%5Cn//%20Shamelessly%20copied%20in%20parts%20from%20rustdoc.%5Cndetails%20%7B%5Cn%20%20%20%20%3E%20summary%20%7B%5Cn%20%20%20%20%20%20%20%20list-style:%20none;%5Cn%20%20%20%20%20%20%20%20display:%20grid;%5Cn%20%20%20%20%20%20%20%20grid-template-columns:%20max-content%20auto;%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20%3E%20summary::-webkit-details-marker%20%7B%5Cn%20%20%20%20%20%20%20%20display:%20none;%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20%3E%20summary::before%20%7B%5Cn%20%20%20%20%20%20%20%20content:%20%5C%22%5C%22;%5Cn%20%20%20%20%20%20%20%20cursor:%20pointer;%5Cn%20%20%20%20%20%20%20%20width:%201em;%5Cn%20%20%20%20%20%20%20%20height:%201em;%5Cn%20%20%20%20%20%20%20%20display:%20inline-block;%5Cn%20%20%20%20%20%20%20%20margin-right:%20.5em;%5Cn%20%20%20%20%20%20%20%20background-image:%20url('data:image/svg+xml,%3Csvg%20width=%5C%2216%5C%22%20height=%5C%2216%5C%22%20viewBox=%5C%220%200%2012%2012%5C%22%20%5C%5C%5Cn%5Ctenable-background=%5C%22new%200%200%2012%2012%5C%22%20xmlns=%5C%22http://www.w3.org/2000/svg%5C%22%3E%5C%5C%5Cn%5Ct%3Cpath%20d=%5C%22M4,2l4,4l-4,4%5C%22%20stroke=%5C%22black%5C%22%20fill=%5C%22none%5C%22%20stroke-width=%5C%221px%5C%22/%3E%3C/svg%3E');%5Cn%20%20%20%20%20%20%20%20transition:%20opacity%20125ms;%5Cn%20%20%20%20%20%20%20%20opacity:%20.6;%5Cn%5Cn%20%20%20%20%20%20%20%20@media%20(prefers-color-scheme:%20dark)%20%7B%20filter:%20invert(1);%20%7D%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20//%20Yes%20this%20is%20adjusted%20by%20hand,%20but%20what%20are%20ya%20gonna%20do%20with%20font%20things...%5Cn%20%20%20%20%3E%20summary:has(h2)::before%20%7B%20margin-top:%20.6em;%20%7D%5Cn%20%20%20%20%3E%20summary:has(h3)::before%20%7B%20margin-top:%20.4em;%20%7D%5Cn%20%20%20%20%3E%20summary:has(h4)::before%20%7B%20margin-top:%20.1em;%20%7D%5Cn%20%20%20%20%3E%20summary:has(h5)::before%20%7B%20margin-top:%20.1em;%20%7D%5Cn%5Cn%20%20%20%20%3E%20summary:hover%20%7B%5Cn%20%20%20%20%20%20%20%20&::before%20%7B%20opacity:%201;%20%7D%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20&%5Bopen%5D%20%3E%20summary::before%20%7B%5Cn%20%20%20%20%20%20%20%20background-image:%20url('data:image/svg+xml,%3Csvg%20width=%5C%2216%5C%22%20height=%5C%2216%5C%22%20viewBox=%5C%220%200%2012%2012%5C%22%20%5C%5C%5Cn%5Ctenable-background=%5C%22new%200%200%2012%2012%5C%22%20xmlns=%5C%22http://www.w3.org/2000/svg%5C%22%3E%5C%5C%5Cn%5Ct%3Cpath%20d=%5C%22M2,4l4,4l4,-4%5C%22%20stroke=%5C%22black%5C%22%20fill=%5C%22none%5C%22%20stroke-width=%5C%221px%5C%22/%3E%3C/svg%3E');%5Cn%20%20%20%20%7D%5Cn%7D%5Cn%5Cn.documentation-text%20%7B%5Cn%20%20%20%20ul%20%7B%20list-style-type:%20disc;%20%7D%5Cn%20%20%20%20ul%20ul%20%7B%20list-style-type:%20circle;%20%7D%5Cn%7D%5Cn%5Cn//%20TODO:%20spacing%20of%20headings%20inside%20summary%20is%20wrong%20because%20it%20doesn't%20collapse%20with%20previous%20margins...%5Cn%22,%22:root%20%7B%5Cn%20%20%20%20--block-spacing:%20.5em;%5Cn%20%20%20%20--block-start-spacing:%20.75em;%5Cn%20%20%20%20--section-spacing:%201.5rem;%5Cn%7D%5Cn%5Cnh1,%20h2,%20h3,%20h4,%20h5,%20p,%20details,%20pre,%20ul,%20ol,%20dl%20%7B%5Cn%20%20%20%20margin-bottom:%20var(--block-spacing);%5Cn%7D%5Cn%5Cndetails%20:is(h1,%20h2,%20h3,%20h4,%20h5,%20p,%20details):last-child%20%7B%5Cn%20%20%20%20margin-bottom:%200;%5Cn%7D%5Cn%5Cn:is(h1,%20h2,%20h3,%20h4,%20h5)%20pre%20%7B%5Cn%20%20%20%20margin-bottom:%200;%5Cn%20%20%20%20white-space:%20pre-wrap;%5Cn%7D%5Cn%5Cn:is(h1,%20h2,%20h3,%20h4,%20h5)%20%7B%5Cn%20%20%20%20margin-top:%20var(--section-spacing);%5Cn%7D%5Cn%5Cnsummary%20:is(h1,%20h2,%20h3,%20h4,%20h5)%20%7B%5Cn%20%20%20%20margin-top:%200;%5Cn%20%20%20%20margin-bottom:%200;%5Cn%7D%5Cn%5Cnsummary:has(h1,%20h2,%20h3,%20h4,%20h5)%20%7B%5Cn%20%20%20%20margin-top:%20var(--section-spacing);%5Cn%20%20%20%20margin-bottom:%20var(--block-start-spacing);%5Cn%7D%5Cn%5Cndetails%20details:last-child%20%3E%20summary:has(h1,%20h2,%20h3,%20h4,%20h5):last-child%20%7B%5Cn%20%20%20%20margin-bottom:%200;%5Cn%7D%5Cn%5Cndetails:has(%3E%20summary%20h4)%20details%20%3E%20summary:has(h5):first-child%20%7B%5Cn%20%20%20%20margin-top:%20var(--block-start-spacing);%5Cn%7D%5Cn%5Cn.documentation-section,%5Cn.page-header%20%7B%5Cn%20%20%20%20margin-bottom:%20var(--section-spacing);%5Cn%7D%5Cn%22,%22:root%20%7B%5Cn%20%20%20%20--content-padding-x:%201rem;%5Cn%20%20%20%20--content-padding-y:%201.4rem;%5Cn%7D%5Cn%5Cn:root%20%7B%5Cn%20%20%20%20color-scheme:%20light%20dark;%5Cn%20%20%20%20background-color:%20light-dark(%23fff,%20%231B1B1B);%5Cn%20%20%20%20color:%20light-dark(%23000,%20%23fff);%5Cn%20%20%20%20scroll-behavior:%20smooth;%5Cn%7D%5Cn%5Cn.documentation-page%20%7B%5Cn%20%20%20%20padding:%20var(--content-padding-y)%20var(--content-padding-x);%5Cn%20%20%20%20max-width:%2070rem;%5Cn%20%20%20%20margin:%20auto;%5Cn%7D%5Cn%22,%22.token-stream.-colors-on-hover%20%7B%5Cn%20%20%20%20.tt%20%7B%5Cn%20%20%20%20%20%20%20%20transition:%20color%20125ms%20ease-in-out;%5Cn%20%20%20%20%7D%5Cn%7D%5Cn%5Cna.tt,%5Cna.tt:visited%20%7B%5Cn%20%20%20%20color:%20inherit;%5Cn%20%20%20%20text-decoration:%20none;%5Cn%7D%5Cn%5Cna.tt%20.tt.-first-letter%20%7B%5Cn%20%20%20%20text-decoration:%20currentColor%20underline%201px;%5Cn%20%20%20%20text-underline-position:%20under;%5Cn%20%20%20%20text-underline-offset:%20-2px;%5Cn%7D%5Cn%5Cna.tt:is(:hover,%20:focus-visible)%20%7B%5Cn%20%20%20%20text-decoration:%20currentColor%20underline%201px;%5Cn%20%20%20%20text-underline-position:%20under;%5Cn%20%20%20%20text-underline-offset:%20-2px;%5Cn%7D%5Cn%5Cn.token-stream.-colors,%5Cn.token-stream.-colors-on-hover:hover%20%7B%5Cn%20%20%20%20.tt.-identMember%20%7B%5Cn%20%20%20%20%20%20%20%20color:%20light-dark(%23000,%20%23fff);%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20.tt.-identSelf%20%7B%5Cn%20%20%20%20%20%20%20%20color:%20light-dark(%2329599f,%20%236c9fec);%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20.tt.-identClass,%20.tt.-identStruct,%20.tt.-identDelegate%20%7B%5Cn%20%20%20%20%20%20%20%20color:%20light-dark(%23007c6c,%20%2351b2a0);%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20.tt.-identGenericParameter,%5Cn%20%20%20%20.tt.-identShape,%5Cn%20%20%20%20.tt.-identInterface,%5Cn%20%20%20%20.tt.-identPrimitive%20%7B%5Cn%20%20%20%20%20%20%20%20color:%20light-dark(%23006d5e,%20%2363c3b0);%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20.tt.-identEnum%20%7B%5Cn%20%20%20%20%20%20%20%20color:%20light-dark(%23037c47,%20%2353b57c);%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20.tt.-literal.-number,%5Cn%20%20%20%20.tt.-literal.-bool%20%7B%5Cn%20%20%20%20%20%20%20%20color:%20light-dark(%23AB2F6B,%20%23B5CEA8);%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20.tt.-literal.-string,%5Cn%20%20%20%20.tt.-literal.-char%20%7B%5Cn%20%20%20%20%20%20%20%20color:%20light-dark(%23A31515,%20%23D69D85);%5Cn%20%20%20%20%7D%5Cn%7D%5Cn%5Cn.tt.-identMember%20%7B%5Cn%20%20%20%20font-weight:%20bold;%5Cn%7D%5Cn%5Cn.tt.-punct%20%7B%5Cn%20%20%20%20font-variant-ligatures:%20contextual;%5Cn%7D%5Cn%5Cn.tt.-attribute%20%7B%5Cn%20%20%20%20font-size:%20.8em;%5Cn%20%20%20%20opacity:%20.5;%5Cn%5Cn%20%20%20%20&:hover%20%7B%5Cn%20%20%20%20%20%20%20%20opacity:%201;%5Cn%20%20%20%20%7D%5Cn%7D%5Cn%5Cn.tt.-summary%20%7B%5Cn%20%20%20%20cursor:%20pointer;%5Cn%20%20%20%20background-color:%20light-dark(%23eaeaea,%20%232b2b2b);%5Cn%20%20%20%20border-radius:%20.3em;%5Cn%20%20%20%20line-height:%201;%5Cn%20%20%20%20border:%201px%20solid%20light-dark(%23d0d0d0,%20%23626262);%5Cn%20%20%20%20font-size:%20.8em;%5Cn%7D%5Cn%22,%22.documentation-member%20%7B%5Cn%20%20%20%20&:target%20%3E%20.details%20%3E%20.signature%20%7B%5Cn%20%20%20%20%20%20%20%20background-color:%20rgba(255,%20255,%200,%20.2);%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20%3E%20.attributes%20%7B%5Cn%20%20%20%20%20%20%20%20//%20Indent%20as%20much%20as%20the%20%3Cdetails%3E%20element%20indents.%5Cn%20%20%20%20%20%20%20%20margin-left:%201.5rem;%5Cn%20%20%20%20%20%20%20%20margin-bottom:%200;%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20%3E%20.details%20%3E%20.signature%20%7B%5Cn%20%20%20%20%20%20%20%20margin-top:%200;%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20%3E%20.details%20%3E%20.documentation-text%20%7B%5Cn%20%20%20%20%20%20%20%20padding-left:%203em;%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20margin-top:%20var(--section-spacing);%5Cn%7D%5Cn%22,%22.documentation-info-box%20%7B%5Cn%20%20%20%20font-size:%20.85em;%5Cn%20%20%20%20border:%201px%20solid%20light-dark(%23d7d7d7,%20%23535353);%5Cn%20%20%20%20padding:%201em;%5Cn%20%20%20%20width:%2020rem;%5Cn%20%20%20%20border-radius:%20.25em;%5Cn%5Cn%20%20%20%20dl%20%7B%5Cn%20%20%20%20%20%20%20%20display:%20grid;%5Cn%20%20%20%20%20%20%20%20grid-template-columns:%20min-content%20auto;%5Cn%20%20%20%20%20%20%20%20margin:%200;%5Cn%20%20%20%20%20%20%20%20grid-gap:%20.2em%201em;%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20dt%20%7B%5Cn%20%20%20%20%20%20%20%20text-align:%20right;%5Cn%20%20%20%20%20%20%20%20font-weight:%20bold;%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20dd%20%7B%5Cn%20%20%20%20%20%20%20%20margin:%200;%5Cn%20%20%20%20%7D%5Cn%7D%5Cn%22,%22.member-list%20%7B%5Cn%20%20%20%20list-style-type:%20none;%5Cn%20%20%20%20padding-inline-start:%200;%5Cn%7D%5Cn%22,%22.code-block%20%7B%5Cn%20%20%20%20background-color:%20light-dark(%23f2f2f2,%20%23343434);%5Cn%20%20%20%20padding:%20.7em%201em;%5Cn%20%20%20%20white-space:%20pre-wrap;%5Cn%20%20%20%20border-radius:%20.25em;%5Cn%7D%5Cn%5Cn.hljs%20%7B%5Cn%20%20%20%20border-radius:%20.25em;%5Cn%7D%5Cn%5Cn.hljs%20%7B%5Cn%20%20%20%20//%20TODO:%20fix%20this%5Cn%20%20%20%20background-color:%20light-dark(%23f2f2f2,%20%23343434)%20!important;%5Cn%7D%5Cn%22,%22.page-header%20%7B%5Cn%20%20%20%20display:%20grid;%5Cn%20%20%20%20grid-template-columns:%201fr%20max-content;%5Cn%20%20%20%20grid-template-rows:%20max-content%201fr;%5Cn%20%20%20%20grid-template-areas:%20'title%20box'%20'desc%20box';%5Cn%20%20%20%20align-items:%20start;%5Cn%20%20%20%20align-content:%20start;%5Cn%20%20%20%20row-gap:%201em;%5Cn%5Cn%20%20%20%20h1%20%7B%20grid-area:%20title;%20margin:%200;%20%7D%5Cn%5Cn%20%20%20%20%3E%20.documentation-info-box%20%7B%5Cn%20%20%20%20%20%20%20%20grid-area:%20box;%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20%3E%20.description%20%7B%5Cn%20%20%20%20%20%20%20%20margin-right:%201em;%5Cn%20%20%20%20%20%20%20%20grid-area:%20desc;%5Cn%20%20%20%20%7D%5Cn%5Cn%20%20%20%20%3E%20.description%20%3E%20.code-block%20%7B%5Cn%20%20%20%20%20%20%20%20font-size:%201.1em;%5Cn%5Cn%20%20%20%20%20%20%20%20&:not(:last-child)%20%7B%5Cn%20%20%20%20%20%20%20%20%20%20%20%20margin-bottom:%20var(--block-spacing);%5Cn%20%20%20%20%20%20%20%20%7D%5Cn%20%20%20%20%7D%5Cn%7D%5Cn%22%5D%7D */

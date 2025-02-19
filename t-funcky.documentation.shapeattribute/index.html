@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><title>ShapeAttribute Class</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="light dark" name="color-scheme">
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/style.css" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-dark.min.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-light.min.css" media="(prefers-color-scheme: light)" /></head>
+<body><main class="documentation-page"><header class="page-header"><h1>ShapeAttribute Class</h1>
+                        <div class="description"><pre class="code-block"><span class="tt -attribute"><span class="token-stream -colors-on-hover"><span class="tt -group"><span class="tt -delimiter">[</span><a href="https://learn.microsoft.com/en-us/dotnet/api/system.attributeusageattribute" class="tt -ident -identClass"><span class="tt -first-letter">A</span>ttributeUsage</a><span class="tt -group"><span class="tt -delimiter">(</span><a href="https://learn.microsoft.com/en-us/dotnet/api/system.attributetargets" class="tt -ident -identEnum"><span class="tt -first-letter">A</span>ttributeTargets</a><span class="tt -punct">.</span><a href="https://learn.microsoft.com/en-us/dotnet/api/system.attributetargets#system-attributetargets-class" class="tt -ident -identEnum"><span class="tt -first-letter">C</span>lass</a> <span class="tt -punct">|</span> <span class="tt -punct">.</span><a href="https://learn.microsoft.com/en-us/dotnet/api/system.attributetargets#system-attributetargets-interface" class="tt -ident -identEnum"><span class="tt -first-letter">I</span>nterface</a><span class="tt -delimiter">)</span></span><span class="tt -delimiter">]</span></span></span></span><br><span class="tt -attribute"><span class="token-stream -colors-on-hover"><span class="tt -group"><span class="tt -delimiter">[</span><a href="https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.conditionalattribute" class="tt -ident -identClass"><span class="tt -first-letter">C</span>onditional</a><span class="tt -group"><span class="tt -delimiter">(</span><span class="tt -literal -string">&quot;DOCUMENTATION&quot;</span><span class="tt -delimiter">)</span></span><span class="tt -delimiter">]</span></span></span></span><br><span class="token-stream -colors"><span class="tt -ident -identKeyword">sealed</span> <span class="tt -ident -identKeyword">class</span> <a href="https://tau.garden/funcky-wip-api-docs/t-funcky.documentation.shapeattribute/" class="tt -ident -identClass"><span class="tt -first-letter">S</span>hapeAttribute</a> <span class="tt -punct">:</span> <a href="https://learn.microsoft.com/en-us/dotnet/api/system.attribute" class="tt -ident -identClass"><span class="tt -first-letter">A</span>ttribute</a></span></pre></div>
+                        <div class="documentation-info-box"><dl><dt>Assembly</dt>
+            <dd>Funcky.Xunit</dd>
+            <dt>Namespace</dt>
+            <dd><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/n-funcky.documentation/" class="tt -ident -identOther"><span class="tt -first-letter">F</span>uncky.Documentation</a></span></dd>
+            <dt>Inheritance</dt><dd><span class="token-stream -colors-on-hover"><a href="https://learn.microsoft.com/en-us/dotnet/api/system.object" class="tt -ident -identPrimitive"><span class="tt -first-letter">o</span>bject</a></span> → <span class="token-stream -colors-on-hover"><a href="https://learn.microsoft.com/en-us/dotnet/api/system.attribute" class="tt -ident -identClass"><span class="tt -first-letter">A</span>ttribute</a></span> → <span class="token-stream -colors-on-hover"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.documentation.shapeattribute/" class="tt -ident -identClass"><span class="tt -first-letter">S</span>hapeAttribute</a></span></dd></dl></div></header>
+
+                    <section class="documentation-section"><details open><summary><h2>Constructors</h2></summary><ul class="member-list"><li class="documentation-member" id=".ctor&#x2B;zzqBol"><pre class="attributes"></pre>
+                <details open class="details"><summary class="signature"><h4 class="-plain"><pre><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.documentation.shapeattribute/" class="tt -ident -identClass"><span class="tt -first-letter">S</span>hapeAttribute</a><span class="tt -group"><span class="tt -delimiter">(</span><span class="tt -delimiter">)</span></span></span></pre></h4></summary></details></li></ul></details></section></main>
+
+    <script type="importmap">{"imports":{"/highlight/":"https://tau.garden/funcky-wip-api-docs/highlight/"}}</script>
+    <script type="module">
+        for (const details of document.querySelectorAll('.tt.-details')) {
+            const expansion = details.querySelector('.tt.-expansion')
+            const summary = details.querySelector('.tt.-summary')
+            details.addEventListener('click', show, { once: true })
+            function show(event) {
+                event.preventDefault()
+                expansion.removeAttribute('hidden')
+                summary.setAttribute('hidden', '')
+            }
+        }
+    </script>
+    <script type="module">
+        import hljs from '/highlight/core.min.js'
+        import csharp from '/highlight/csharp.min.js'
+        hljs.registerLanguage('csharp', csharp)
+        hljs.configure({ cssSelector: 'pre code.language-csharp' })
+        hljs.highlightAll()
+    </script>
+    <script type="module">
+        openDetailsAncestorsOfTargetedElement()
+        window.addEventListener('hashchange', _ => openDetailsAncestorsOfTargetedElement())
+
+        function openDetailsAncestorsOfTargetedElement() {
+            for (const details of document.querySelectorAll('details:has(:target)')) {
+                details.open = true
+            }
+        }
+    </script></body></html>

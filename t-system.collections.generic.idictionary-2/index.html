@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><title>IDictionary&lt;TKey, TValue&gt; Interface</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="light dark" name="color-scheme">
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/style.css" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-dark.min.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-light.min.css" media="(prefers-color-scheme: light)" /></head>
+<body><main class="documentation-page"><header class="page-header"><h1>IDictionary&lt;TKey, TValue&gt; Interface</h1>
+                        <div class="description"><pre class="code-block"><span class="token-stream -colors"><span class="tt -ident -identKeyword">interface</span> <a href="https://tau.garden/funcky-wip-api-docs/t-system.collections.generic.idictionary-2/" class="tt -ident -identInterface"><span class="tt -first-letter">I</span>Dictionary</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TKey</span><span class="tt -punct">,</span> <span class="tt -ident -identGenericParameter">TValue</span><span class="tt -delimiter">&gt;</span></span> <span class="tt -punct">:</span> <a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1" class="tt -ident -identInterface"><span class="tt -first-letter">I</span>Collection</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2" class="tt -ident -identStruct"><span class="tt -first-letter">K</span>eyValuePair</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TKey</span><span class="tt -punct">,</span> <span class="tt -ident -identGenericParameter">TValue</span><span class="tt -delimiter">&gt;</span></span><span class="tt -delimiter">&gt;</span></span></span></pre></div>
+                        <div class="documentation-info-box"><dl><dt>Assembly</dt>
+            <dd>System.Private.CoreLib</dd>
+            <dt>Namespace</dt>
+            <dd><span class="token-stream -colors"><span class="tt -ident -identOther">System.Collections.Generic</span></span></dd>
+            </dl></div></header>
+
+                    <section class="documentation-section"><details open><summary><h2>Extensions from <code><span class="token-stream -colors"><span class="tt -ident -identClass">DictionaryExtensions</span></span></code></h2></summary><ul class="member-list"><li class="documentation-member" id="Funcky.Extensions.DictionaryExtensions.GetValueOrNone&#x2B;nwJuo3"><pre class="attributes"><span class="tt -attribute"><span class="token-stream -colors-on-hover"><span class="tt -group"><span class="tt -delimiter">[</span><a href="https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.contracts.pureattribute" class="tt -ident -identClass"><span class="tt -first-letter">P</span>ure</a><span class="tt -delimiter">]</span></span></span></span><br></pre>
+                <details open class="details"><summary class="signature"><h4 class="-plain"><pre><span class="token-stream -colors"><span class="tt -ident -identKeyword">static</span> <a href="https://tau.garden/funcky-wip-api-docs/t-system.collections.generic.idictionary-2/#Funcky.Extensions.DictionaryExtensions.GetValueOrNone&#x2B;nwJuo3" class="tt -ident -identMember"><span class="tt -first-letter">G</span>etValueOrNone</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -details"><span class="tt -summary" title="TKey, TValue">...</span><span class="tt -expansion" hidden><span class="tt -ident -identGenericParameter">TKey</span><span class="tt -punct">,</span> <span class="tt -ident -identGenericParameter">TValue</span></span></span><span class="tt -delimiter">&gt;</span></span><span class="tt -group"><span class="tt -delimiter">(</span><span class="tt -ident -identKeyword">this</span> <abbr title="IDictionary&lt;TKey, TValue&gt;"><span class="tt -ident -identSelf">Self</span></abbr> <span class="tt -ident -identOther">dictionary</span><span class="tt -punct">,</span> <span class="tt -ident -identGenericParameter">TKey</span> <span class="tt -ident -identOther">key</span><span class="tt -delimiter">)</span></span> <span class="tt -punct">-&gt;</span> <a href="https://tau.garden/funcky-wip-api-docs/t-funcky.monads.option-1/" class="tt -ident -identStruct"><span class="tt -first-letter">O</span>ption</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TValue</span><span class="tt -delimiter">&gt;</span></span> &#xA;     <span class="tt -ident -identKeyword">where</span> <span class="tt -details"><span class="tt -summary" title="TValue : notnull">...</span><span class="tt -expansion" hidden><span class="tt -ident -identGenericParameter">TValue</span> <span class="tt -punct">:</span> <span class="tt -ident -identKeyword">notnull</span></span></span></span></pre></h4></summary></details></li><li class="documentation-member" id="Funcky.Extensions.DictionaryExtensions.RemoveOrNone&#x2B;lqV-Wv"><pre class="attributes"></pre>
+                <details open class="details"><summary class="signature"><h4 class="-plain"><pre><span class="token-stream -colors"><span class="tt -ident -identKeyword">static</span> <a href="https://tau.garden/funcky-wip-api-docs/t-system.collections.generic.idictionary-2/#Funcky.Extensions.DictionaryExtensions.RemoveOrNone&#x2B;lqV-Wv" class="tt -ident -identMember"><span class="tt -first-letter">R</span>emoveOrNone</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -details"><span class="tt -summary" title="TKey, TValue">...</span><span class="tt -expansion" hidden><span class="tt -ident -identGenericParameter">TKey</span><span class="tt -punct">,</span> <span class="tt -ident -identGenericParameter">TValue</span></span></span><span class="tt -delimiter">&gt;</span></span><span class="tt -group"><span class="tt -delimiter">(</span><span class="tt -ident -identKeyword">this</span> <abbr title="IDictionary&lt;TKey, TValue&gt;"><span class="tt -ident -identSelf">Self</span></abbr> <span class="tt -ident -identOther">dictionary</span><span class="tt -punct">,</span> <span class="tt -ident -identGenericParameter">TKey</span> <span class="tt -ident -identOther">key</span><span class="tt -delimiter">)</span></span> <span class="tt -punct">-&gt;</span> <a href="https://tau.garden/funcky-wip-api-docs/t-funcky.monads.option-1/" class="tt -ident -identStruct"><span class="tt -first-letter">O</span>ption</a><span class="tt -group"><span class="tt -delimiter">&lt;</span><span class="tt -ident -identGenericParameter">TValue</span><span class="tt -delimiter">&gt;</span></span> &#xA;     <span class="tt -ident -identKeyword">where</span> <span class="tt -details"><span class="tt -summary" title="TValue : notnull">...</span><span class="tt -expansion" hidden><span class="tt -ident -identGenericParameter">TValue</span> <span class="tt -punct">:</span> <span class="tt -ident -identKeyword">notnull</span></span></span></span></pre></h4></summary></details></li></ul></details></section></main>
+
+    <script type="importmap">{"imports":{"/highlight/":"https://tau.garden/funcky-wip-api-docs/highlight/"}}</script>
+    <script type="module">
+        for (const details of document.querySelectorAll('.tt.-details')) {
+            const expansion = details.querySelector('.tt.-expansion')
+            const summary = details.querySelector('.tt.-summary')
+            details.addEventListener('click', show, { once: true })
+            function show(event) {
+                event.preventDefault()
+                expansion.removeAttribute('hidden')
+                summary.setAttribute('hidden', '')
+            }
+        }
+    </script>
+    <script type="module">
+        import hljs from '/highlight/core.min.js'
+        import csharp from '/highlight/csharp.min.js'
+        hljs.registerLanguage('csharp', csharp)
+        hljs.configure({ cssSelector: 'pre code.language-csharp' })
+        hljs.highlightAll()
+    </script>
+    <script type="module">
+        openDetailsAncestorsOfTargetedElement()
+        window.addEventListener('hashchange', _ => openDetailsAncestorsOfTargetedElement())
+
+        function openDetailsAncestorsOfTargetedElement() {
+            for (const details of document.querySelectorAll('details:has(:target)')) {
+                details.open = true
+            }
+        }
+    </script></body></html>

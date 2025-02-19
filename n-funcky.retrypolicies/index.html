@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><title>Funcky.RetryPolicies Namespace</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="light dark" name="color-scheme">
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/style.css" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-dark.min.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="https://tau.garden/funcky-wip-api-docs/highlight/stackoverflow-light.min.css" media="(prefers-color-scheme: light)" /></head>
+<body><main class="documentation-page"><header class="page-header"><h1>Funcky.RetryPolicies Namespace</h1>
+                        <div class="description"><pre class="code-block"><span class="token-stream -colors"><span class="tt -ident -identKeyword">namespace</span> <a href="https://tau.garden/funcky-wip-api-docs/n-funcky.retrypolicies/" class="tt -ident -identOther"><span class="tt -first-letter">F</span>uncky.RetryPolicies</a></span></pre></div>
+                        </header>
+
+                    <section class="documentation-section"><h2>Types</h2>
+<ul><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.retrypolicies.constantdelaypolicy/" class="tt -ident -identClass"><span class="tt -first-letter">C</span>onstantDelayPolicy</a></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.retrypolicies.donotretrypolicy/" class="tt -ident -identClass"><span class="tt -first-letter">D</span>oNotRetryPolicy</a></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.retrypolicies.exponentialbackoffretrypolicy/" class="tt -ident -identClass"><span class="tt -first-letter">E</span>xponentialBackOffRetryPolicy</a></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.retrypolicies.iretrypolicy/" class="tt -ident -identInterface"><span class="tt -first-letter">I</span>RetryPolicy</a></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.retrypolicies.linearbackoffretrypolicy/" class="tt -ident -identClass"><span class="tt -first-letter">L</span>inearBackOffRetryPolicy</a></span></code></li><li><code><span class="token-stream -colors"><a href="https://tau.garden/funcky-wip-api-docs/t-funcky.retrypolicies.nodelayretrypolicy/" class="tt -ident -identClass"><span class="tt -first-letter">N</span>oDelayRetryPolicy</a></span></code></li></ul></section></main>
+
+    <script type="importmap">{"imports":{"/highlight/":"https://tau.garden/funcky-wip-api-docs/highlight/"}}</script>
+    <script type="module">
+        for (const details of document.querySelectorAll('.tt.-details')) {
+            const expansion = details.querySelector('.tt.-expansion')
+            const summary = details.querySelector('.tt.-summary')
+            details.addEventListener('click', show, { once: true })
+            function show(event) {
+                event.preventDefault()
+                expansion.removeAttribute('hidden')
+                summary.setAttribute('hidden', '')
+            }
+        }
+    </script>
+    <script type="module">
+        import hljs from '/highlight/core.min.js'
+        import csharp from '/highlight/csharp.min.js'
+        hljs.registerLanguage('csharp', csharp)
+        hljs.configure({ cssSelector: 'pre code.language-csharp' })
+        hljs.highlightAll()
+    </script>
+    <script type="module">
+        openDetailsAncestorsOfTargetedElement()
+        window.addEventListener('hashchange', _ => openDetailsAncestorsOfTargetedElement())
+
+        function openDetailsAncestorsOfTargetedElement() {
+            for (const details of document.querySelectorAll('details:has(:target)')) {
+                details.open = true
+            }
+        }
+    </script></body></html>
